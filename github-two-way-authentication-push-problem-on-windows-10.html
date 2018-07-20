@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+
+
+
+<meta name="author" content="Ali" />
+<meta name="description" content="It&#39;s always good to enable two-way authentication on any account on the net because it increases security. Github does support two way authentication as well. I tried to push my new blog on Github.io by git commands below: git add *.* git commit -m &#39;hello-world&#39; git push I expected git …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Code Fusion"/>
+<meta property="og:title" content="Github two-way authentication push problem on Windows 10"/>
+<meta property="og:description" content="It&#39;s always good to enable two-way authentication on any account on the net because it increases security. Github does support two way authentication as well. I tried to push my new blog on Github.io by git commands below: git add *.* git commit -m &#39;hello-world&#39; git push I expected git …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/github-two-way-authentication-push-problem-on-windows-10.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-07-20 14:13:00+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/ali.html">
+<meta property="article:section" content="Github"/>
+<meta property="og:image" content="/images/profile.jpg">
+
+  <title>Code Fusion &ndash; Github two-way authentication push problem on Windows 10</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="">
+        <img src="/images/profile.jpg" alt="Code Fusion" title="Code Fusion">
+      </a>
+      <h1><a href="">Code Fusion</a></h1>
+
+<p>Ali Bahraminezhad<br />Software Engineer and Tech Lead</p>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/bahraminezhad" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/al1b" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/abahraminezhad" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="github-two-way-authentication-push-problem-on-windows-10">Github two-way authentication push problem on Windows 10</h1>
+    <p>
+          Posted on Fri 20 July 2018 in <a href="/category/github.html">Github</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>It's always good to enable two-way authentication on any account on the net because it increases security. <a href="https://help.github.com/articles/accessing-github-using-two-factor-authentication/">Github</a> does support two way authentication as well.</p>
+<p>I tried to push my new blog on <a href="github.io">Github.io</a> by git commands below:</p>
+<div class="highlight"><pre><span></span>git add *.*
+git commit -m &#39;hello-world&#39;
+git push
+</pre></div>
+
+
+<p>I expected git cli prompt for an username and password. I also expected Github to sends me an SMS wich contains a token, but this is what I got:</p>
+<div class="highlight"><pre><span></span><span class="n">fatal</span><span class="o">:</span> <span class="n">HttpRequestException</span> <span class="n">encountered</span><span class="o">.</span>
+   <span class="n">An</span> <span class="n">error</span> <span class="n">occurred</span> <span class="k">while</span> <span class="n">sending</span> <span class="n">the</span> <span class="n">request</span><span class="o">.</span>
+<span class="n">Username</span> <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span><span class="o">:</span> <span class="n">username</span>
+<span class="n">Password</span> <span class="k">for</span> <span class="s1">&#39;https://user@github.com&#39;</span><span class="o">:</span>
+<span class="n">remote</span><span class="o">:</span> <span class="n">Invalid</span> <span class="n">username</span> <span class="n">or</span> <span class="n">password</span><span class="o">.</span>
+<span class="n">fatal</span><span class="o">:</span> <span class="n">Authentication</span> <span class="n">failed</span> <span class="k">for</span> <span class="s1">&#39;https://github.com/user/repo.git/&#39;</span>
+</pre></div>
+
+
+<p>After reading <strong><a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/488">HttpRequestException and then I'm prompted for username</a></strong> issue, a <a href="https://github.com/fartzy">Github user</a> suggested to install the latest version of it. I installed <strong>Git Credential Manager for Windows</strong> version <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.16.2">1.16.2</a> and my problem solved.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>
+  &copy;  2018 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Code Fusion ",
+  "url" : "",
+  "image": "/images/profile.jpg",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
