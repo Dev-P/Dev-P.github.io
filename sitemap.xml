@@ -4,63 +4,63 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2018-07-20T15:10:43-00:00</lastmod>
+<loc>https://al1b.github.io/</loc>
+<lastmod>2018-07-20T15:14:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2018-07-20T15:10:43-00:00</lastmod>
+<loc>https://al1b.github.io/archives.html</loc>
+<lastmod>2018-07-20T15:14:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2018-07-20T15:10:43-00:00</lastmod>
+<loc>https://al1b.github.io/tags.html</loc>
+<lastmod>2018-07-20T15:14:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2018-07-20T15:10:43-00:00</lastmod>
+<loc>https://al1b.github.io/categories.html</loc>
+<lastmod>2018-07-20T15:14:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/github-two-way-authentication-push-problem-on-windows-10.html</loc>
+<loc>https://al1b.github.io/github-two-way-authentication-push-problem-on-windows-10.html</loc>
 <lastmod>2018-07-20T14:13:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/hello-world.html</loc>
+<loc>https://al1b.github.io/hello-world.html</loc>
 <lastmod>2018-07-20T12:12:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/blog.html</loc>
+<loc>https://al1b.github.io/category/blog.html</loc>
 <lastmod>2018-07-20T12:12:00+01:40</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/github.html</loc>
+<loc>https://al1b.github.io/category/github.html</loc>
 <lastmod>2018-07-20T14:13:00+01:40</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/ali.html</loc>
+<loc>https://al1b.github.io/author/ali.html</loc>
 <lastmod>2018-07-20T14:13:00+01:40</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
